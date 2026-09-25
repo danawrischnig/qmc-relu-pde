@@ -359,6 +359,9 @@ def main():
         "n_jobs": n_jobs,
     }
 
+    if pde_name == "sine_diffusion":
+        experiment_params["level"] = level
+        
     print("Experiment parameters:")
     for key, value in experiment_params.items():
         print(f"{key}: {value}")
